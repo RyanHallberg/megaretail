@@ -24,5 +24,15 @@ public class ProductService
 		
 		return products;
 	}
+	
+	// get a single product by ID
+	public ProductEntity getProductById(Long id)
+	{
+		ProductEntity product = entityManager.find(ProductEntity.class, id);
+		
+		entityManager.detach(product);
+		
+		return product;
+	}
 
 }
