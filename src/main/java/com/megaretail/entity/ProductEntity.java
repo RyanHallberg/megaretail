@@ -2,14 +2,11 @@ package com.megaretail.entity;
 
 import java.math.BigDecimal;
 
-//import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-//import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-//import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
@@ -24,32 +21,17 @@ public class ProductEntity
 	@Column(name = "product_name")
 	private String name;
 	
-	@Column(name = "product_description")
+	@Column(name = "product_desc")
 	private String description;
 	
 	@Column(name = "product_price")
 	private BigDecimal price;
 	
-	@Column(name = "product_quantity_on_hand")
+	@Column(name = "product_qoh")
 	private int quantityOnHand;
 	
 	@Column(name = "product_department")
 	private String category;
-	
-//	@Column(name = "product_image")
-//	@Lob
-//	@Basic(fetch = FetchType.EAGER)
-//	private Byte[] image;
-
-//	public Byte[] getImage()
-//	{
-//		return image;
-//	}
-//
-//	public void setImage(Byte[] image)
-//	{
-//		this.image = image;
-//	}
 
 	public Long getId()
 	{
