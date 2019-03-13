@@ -22,18 +22,18 @@ public class ImageEntity
 	@Column(name="product_id_fk")
 	private Long productId;
 	
-	@Column(name = "product_image")
+	@Column(name = "image")
 	@Lob
 	@Basic(fetch = FetchType.LAZY)
-	private Byte[] image;
+	private byte[] image;
 
 	// getters and setters
-	public Byte[] getImage()
+	public byte[] getImage()
 	{
 		return image;
 	}
 
-	public void setImage(Byte[] image)
+	public void setImage(byte[] image)
 	{
 		this.image = image;
 	}
