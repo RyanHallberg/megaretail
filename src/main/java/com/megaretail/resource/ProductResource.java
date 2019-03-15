@@ -1,9 +1,6 @@
 package com.megaretail.resource;
 
-//import java.nio.file.Files;
-//import java.nio.file.Paths;
 import java.util.List;
-
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;

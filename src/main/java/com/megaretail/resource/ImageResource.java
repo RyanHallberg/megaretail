@@ -9,7 +9,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-//import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -38,9 +37,10 @@ public class ImageResource
 	{
 		ImageEntity image = imageService.getProductImage(id);
 		
+		// not sure how this worked but I had to return id.toString() to get my front end working properly
 		if (image != null)
 		{
-			return Response.ok().entity(Files.write(Paths.get("pic.png"), image.getImage()).toFile()).build();
+			return Response.ok().entity(Files.write(Paths.get(id.toString()), image.getImage()).toFile()).build();
 		}
 		
 		return Response.noContent().build();
