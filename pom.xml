@@ -12,6 +12,18 @@
             <version>8.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.airhacks/jaxrs-cors -->
+		<dependency>
+		    <groupId>com.airhacks</groupId>
+		    <artifactId>jaxrs-cors</artifactId>
+		    <version>0.0.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxb-provider -->
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-jaxb-provider</artifactId>
+		    <version>3.6.3.Final</version>
+		</dependency>
     </dependencies>
     <build>
         <finalName>megaretail</finalName>
